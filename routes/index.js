@@ -7,6 +7,10 @@ module.exports = function (app, nus) {
   app.use('/api/v1', api);
 
   // index route
+  app.route('/url/shortened').all(function (req, res) {
+    res.render('shorturl');
+  });
+
   app.route('/').all(function (req, res) {
     res.render('index');
   });

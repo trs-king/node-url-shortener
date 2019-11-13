@@ -14,7 +14,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        /* Set height to 100% for body and html to enable the background image to cover the whole page: */
         body, html {
             margin: 0;
             padding: 0;
@@ -91,18 +90,45 @@
             margin: auto;
             width: 50%;
         }
-
     </style>
   </head>
   <body>
     <div class="bgimg">
         <div class="banner-container">
             <div class="middle">
-                <p><img src="img/logo-site.png"/></p>
+                <p><img src="../img/logo-site.png"/></p>
                 <hr>
-                <h1>COMING SOON</h1>
+                <div class="container">
+                    <section class="row">
+                        <div class="col-md-12 form-group url-form">
+                        <form class="form" id="nus">
+                            <div class="row">
+                                <div class="col-lg-10 input-group url-input">
+                                    <input id="link" name="long_url" type="text" class="form-control input-lg" placeholder="Paste a link here">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-default btn-lg" type="submit">
+                                        <span class="glyphicon glyphicon-link"></span>
+                                        Shorten
+                                    </button>
+                                    <button class="btn btn-default btn-lg" data-clipboard-target="#link" type="button">
+                                        <span class="glyphicon glyphicon-share-alt"></span>
+                                        Copy
+                                    </button>
+                                    </span>
+                                </div><!-- /.input-group -->
+                            </div>
+                        </form>
+                        </div><!--/.form-group-->
+                    </section>
+                </div><!-- /.container -->
             </div>
         </div>
     </div>
+
+    <!-- GitHub Corners http://tholman.com/github-corners -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+    <script src="/js/nus.js" type="text/javascript"></script>
   </body>
 </html>
